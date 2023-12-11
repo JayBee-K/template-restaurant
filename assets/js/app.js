@@ -112,13 +112,19 @@ const handleSlideHeader = function () {
 		new Swiper('#slider-header .swiper', {
 			slidesPerView: 1,
 			autoplay: {
-				delay: 153000,
+				delay: 3000,
 				disableOnInteraction: true,
 			},
 			speed: 800,
 			loop: true,
 		});
 	}
+}
+
+const handleFancyboxHero = function () {
+	$('#fancyHero').each(function () {
+		Fancybox.bind(`#fancyHero`);
+	});
 }
 
 $(function () {
@@ -131,4 +137,5 @@ $(function () {
 	});
 
 	handleSlideHeader();
+	handleFancyboxHero();
 });

@@ -53,6 +53,104 @@
 	content: "/";
 }
 
+.header-bottom {
+	background: rgba(12, 11, 9, 0.6);
+	transition: all 0.5s;
+	padding: 15px 0;
+}
+
+.header-bottom .header-logo img {
+	height: 40px;
+	width: auto;
+}
+
+.header-bottom .header-navigation ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.header-bottom .header-navigation > ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 30px;
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) {
+	position: relative;
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	color: var(--bs-white);
+	font-size: 1.075em;
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) > a > i {
+	transition: 0.3s transform ease-in-out;
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) > ul {
+	background: rgba(12, 11, 9, 0.6);
+	position: absolute;
+	top: calc(100% + 34px);
+	min-width: 200px;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: var(--transition-default);
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button):hover > ul {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	top: calc(100% + 24px);
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) > ul:before {
+	position: absolute;
+	content: "";
+	display: block;
+	top: -24px;
+	height: 24px;
+	left: 0;
+	right: 0;
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) > ul > li > a {
+	display: block;
+	gap: 5px;
+	color: var(--bs-white);
+	font-size: 1em;
+	padding: 8px 15px;
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) > ul > li + li {
+	border-top: 1px solid rgba(82, 81, 80, 0.25);
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button):hover > a,
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) > a.active,
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button) > ul > li:hover > a {
+	color: var(--primary-color);
+}
+
+.header-bottom .header-navigation > ul > li:not(.header-navigation_button):hover > a > i {
+	transform: rotate(180deg);
+}
+
+.header-bottom .header-navigation > ul > li > a.button-theme {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 .section-hero {
 	height: 100vh;
 	background-repeat: no-repeat;
