@@ -107,11 +107,28 @@ let handleCallMenu = function () {
 	}
 }
 
+const handleSlideHeader = function () {
+	if ($('#slider-header').length > 0) {
+		new Swiper('#slider-header .swiper', {
+			slidesPerView: 1,
+			autoplay: {
+				delay: 153000,
+				disableOnInteraction: true,
+			},
+			speed: 800,
+			loop: true,
+		});
+	}
+}
+
 $(function () {
+	AOS.init();
 	handleApplyCollapse($('#header-navigation > ul'), true, true);
 	handleCallMenu();
 	$(window).resize(function () {
 		handleApplyCollapse($('#header-navigation > ul'));
 		handleCallMenu();
 	});
+
+	handleSlideHeader();
 });

@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/aos/aos.css">
 	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/css/base.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
@@ -27,22 +28,100 @@
 
 	<style>
 		:root {
-			--primary-color: #2579f2;
-			--primary-hover: #1470f3;
-			--primary-rgb: 37, 141, 242;
-			--secondary-color: #ee4d2d;
-			--secondary-hover: #ef3f1c;
-			--secondary-rgb: 238, 77, 45;
+			--primary-color: #cda45e;
+			--primary-hover: #d9ba85;
+			--primary-rgb: 205, 164, 94;
 		}
 	</style>
 </head>
 <body>
 
 <div id="header" class="header">
+	<div class="header-top hstack">
+		<div class="container">
+			<div class="row g-3 align-items-center">
+				<div class="col-lg-7">
+					<div class="header-slider" id="slider-header">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="header-contact hstack">
+										<div class="header-contact_item hstack">
+											<i class="fas fa-phone-alt"></i>
+											<a href="" class="link-default">089.2008.1707 (Munich)</a>
+										</div>
+										<div class="header-contact_item hstack">
+											<i class="fal fa-clock"></i>
+											<span class="link-default">11:30-14:30 17:30-22:30 (Everyday
+											                           incl.holiday)</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="header-contact hstack">
+										<div class="header-contact_item hstack">
+											<i class="fas fa-phone-alt"></i>
+											<a href="" class="link-default">08841.487.3381 (Murnau)</a>
+										</div>
+										<div class="header-contact_item hstack">
+											<i class="fal fa-clock"></i>
+											<span class="link-default">11:00-21:00 (Mon-Sun)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="header-language hstack justify-content-lg-end">
+						<a href="" class="header-language_item">
+							en
+						</a>
+						<a href="" class="header-language_item">
+							de
+						</a>
+						<a href="" class="header-language_item active">
+							vi
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="header-overlay" id="header-overlay"></div>
 </div>
 
 <div id="main" class="main">
+	<div class="section-hero pseudo hstack" style="background-image: url('./assets/images/hero-bg.png')">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-8">
+					<div class="position-relative text-center text-lg-start hero-content">
+						<div class="hero-title">
+							Chào mừng bạn đến với <span>Asia-Ho</span>
+						</div>
+						<div class="hero-description">
+							Món ăn Việt với tình yêu và niềm đam mê
+						</div>
+						<div class="hero-buttons">
+							<a href="" class="button-theme button-theme_primary__outline">
+								DANH SÁCH NHÀ HÀNG CỦA CHÚNG TÔI
+							</a>
+							<a href="" class="button-theme button-theme_primary__outline">
+								ĐẶT MÓN
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="hstack justify-content-center">
+						<button class="hero-video" type="button"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer id="footer" class="footer">
@@ -51,8 +130,9 @@
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
         src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type=" text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type=" text/javascript" src="./assets/plugins/aos/aos.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
 </html>
