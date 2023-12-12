@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Restaurant</title>
+    <meta name="description" content="Template Restaurant">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Restaurant">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Restaurant">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/plugins/aos/aos.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <style>
+        :root {
+            --primary-color: #cda45e;
+            --primary-hover: #d9ba85;
+            --primary-rgb: 205, 164, 94;
+        }
+    </style>
+</head>
+<body id="body" class="is-preloader">
+
+<div id="preloader" class="preloader"></div>
+
+<div id="header" class="header">
+    <div class="header-top hstack">
+        <div class="container">
+            <div class="row g-sm-3 g-1 align-items-center">
+                <div class="col-lg-7 col-sm-6">
+                    <div class="header-slider" id="slider-header">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="header-contact hstack">
+                                        <div class="header-contact_item hstack">
+                                            <i class="fas fa-phone-alt"></i>
+                                            <a href="" class="link-default">089.2008.1707 (Munich)</a>
+                                        </div>
+                                        <div class="header-contact_item header-contact_time hstack">
+                                            <i class="fal fa-clock"></i>
+                                            <span class="link-default">11:30-14:30 17:30-22:30 (Everyday
+                                                incl.holiday)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="header-contact hstack">
+                                        <div class="header-contact_item hstack">
+                                            <i class="fas fa-phone-alt"></i>
+                                            <a href="" class="link-default">08841.487.3381 (Murnau)</a>
+                                        </div>
+                                        <div class="header-contact_item header-contact_time hstack">
+                                            <i class="fal fa-clock"></i>
+                                            <span class="link-default">11:00-21:00 (Mon-Sun)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-6">
+                    <div class="header-language hstack justify-content-sm-end">
+                        <a href="" class="header-language_item">
+                            en
+                        </a>
+                        <a href="" class="header-language_item">
+                            de
+                        </a>
+                        <a href="" class="header-language_item active">
+                            vi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row g-lg-3 align-items-center justify-content-lg-between">
+                <div class="col-12 col-lg">
+                    <div class="header-logo">
+                        <a href="" class="d-inline-block align-middle">
+                            <img src="./assets/images/netpay-white.png" class="mw-100" alt="">
+                        </a>
+                        <div class="header-hamburger d-flex d-lg-none">
+                            <button type="button" class="hamburger-button" id="hamburger-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                    <div class="header-navigation" id="header-navigation">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" data-target="#body" class="active handleScrollElm">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" data-target="#introduction" class="handleScrollElm">
+                                    Về chúng tôi
+                                    <i class="fal fa-angle-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="">Dropdown menu 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Dropdown menu 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Dropdown menu 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Dropdown menu 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Dropdown menu 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" data-target="#specials" class="handleScrollElm">
+                                    Đặc biệt
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" data-target="#gallery" class="handleScrollElm">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" data-target="#contact" class="handleScrollElm">
+                                    Liên hệ
+                                </a>
+                            </li>
+                            <li class="header-navigation_button">
+                                <a href="./dat-mon.html" class="button-theme button-theme_primary__outline">
+                                    Đặt món
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+    <div class="section-order pseudo hstack" style="background-image: url('./assets/images/hero/hero-bg.png')">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <div class="order-list">
+                <div class="order-item">
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="order-content position-relative">
+                                <div class="order-content_title">
+                                    Vietnamesische Küche & Sushi Bar
+                                </div>
+                                <div class="order-content_address">
+                                    Địa chỉ: Zasingerstraße 2, 81547 München
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="order-icon hstack justify-content-center position-relative">
+                                <img src="./assets/images/icon-cart.png" class="img-fluid position-relative zi-2"
+                                     width="30px" height="30px" alt="">
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="order-content position-relative">
+                                <div class="order-content_title">
+                                    Vietnamesische Küche & Sushi Bar
+                                </div>
+                                <div class="order-content_address">
+                                    Địa chỉ: Zasingerstraße 2, 81547 München
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="order-icon hstack justify-content-center position-relative">
+                                <img src="./assets/images/icon-cart.png" class="img-fluid position-relative zi-2"
+                                     width="30px" height="30px" alt="">
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-title">
+                            VIETNAMESISCHE KÜCHE & SUSHI BAR
+                        </div>
+                        <div class="footer-text">
+                            Zasingerstraße 2
+                            <br>
+                            81547 München, Deutschland
+                            <br>
+                            St.Nr.: 189/826/45736
+                            <br>
+                            Finanzamt München
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact_item">
+                                Điện thoại:<a href="tel:08920081707">089.2008.1707</a>
+                            </div>
+                            <div class="footer-contact_item">
+                                Email:<a href="mailto:info@asia-ho.de">info@asia-ho.de</a>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                            <div class="footer-social_item">
+                                <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="footer-social_item">
+                                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-title">
+                            ASIA HO MURNAU AM STAFFELSEE
+                        </div>
+                        <div class="footer-text">
+                            Zasingerstraße 2
+                            <br>
+                            81547 München, Deutschland
+                            <br>
+                            St.Nr.: 189/826/45736
+                            <br>
+                            Finanzamt München
+                        </div>
+                        <div class="footer-contact">
+                            <div class="footer-contact_item">
+                                Điện thoại:<a href="tel:08920081707">089.2008.1707</a>
+                            </div>
+                            <div class="footer-contact_item">
+                                Email:<a href="mailto:info@asia-ho.de">info@asia-ho.de</a>
+                            </div>
+                        </div>
+                        <div class="footer-social">
+                            <div class="footer-social_item">
+                                <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="footer-social_item">
+                                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links hstack">
+                <div class="footer-links_title">
+                    Đường dẫn hữu ích
+                </div>
+                <ul class="list-unstyled hstack mb-0">
+                    <li>
+                        <i class="fal fa-angle-right"></i>
+                        <a href="">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fal fa-angle-right"></i>
+                        <a href="">
+                            Về chúng tôi
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fal fa-angle-right"></i>
+                        <a href="">
+                            Sự kiện
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fal fa-angle-right"></i>
+                        <a href="">
+                            Impressum
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fal fa-angle-right"></i>
+                        <a href="">
+                            Chính sách bảo mật
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links hstack">
+                <div class="footer-links_title">
+                    Dịch vụ của chúng tôi
+                </div>
+                <ul class="list-unstyled hstack mb-0">
+                    <li>
+                        <i class="fal fa-angle-right"></i>
+                        <a href="">
+                            Tiệc gia đình
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fal fa-angle-right"></i>
+                        <a href="">
+                            Tiệc sinh nhật
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fal fa-angle-right"></i>
+                        <a href="">
+                            Giao hàng
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            2000-2023 © Bản quyền thuộc về <strong><span>Asia-Ho</span></strong> . Đã đăng ký Bản quyền.<span
+                class="text-nowrap">Design by <a href="https://nencer.com" target="_blank">Nencer</a>.</span>
+        </div>
+    </div>
+</footer>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type=" text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type=" text/javascript" src="./assets/plugins/aos/aos.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
