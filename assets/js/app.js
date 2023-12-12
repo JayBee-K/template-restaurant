@@ -190,6 +190,47 @@ const handleSubmitFormValid = function () {
 	}
 }
 
+const handleScrollElm = function () {
+	if ($('.handleScrollElm').length && $('.elmTargetScroll').length) {
+		$('.handleScrollElm').click(function (event) {
+			let elmClick = $(this);
+			let elmTarget = elmClick.attr('data-target');
+			if ($(elmTarget).length) {
+				$('.handleScrollElm').removeClass('active');
+				elmClick.addClass('active');
+				let offsetElm = $(elmTarget).offset().top;
+				if (offsetElm > 0) {
+					offsetElm -= $('#header .header-bottom').outerHeight();
+				}
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: offsetElm
+				});
+			}
+			return false;
+		});
+
+		let elmTargetScroll = $('.elmTargetScroll');
+		$(window).on('scroll', function () {
+			let scrollTop = $(this).scrollTop();
+			let windowHeight = $(this).height();
+
+			for (let i = 0; i < elmTargetScroll.length; i++) {
+				let divOffset = $(elmTargetScroll[i]).offset().top;
+				console.log(divOffset);
+				let nextDivOffset = (i + 1 < elmTargetScroll.length) ? $(elmTargetScroll[i + 1]).offset().top : $(document).height();
+
+				if (scrollTop >= divOffset && scrollTop < nextDivOffset) {
+					$('#' + $(elmTargetScroll[i]).attr('id')).addClass('active');
+					break; // Kết thúc vòng lặp khi đã tìm được div
+				}
+			}
+
+
+		});
+	}
+}
+
 $(function () {
 	// Preloader
 	$(window).on('load', function () {
@@ -221,4 +262,6 @@ $(function () {
 	handleFancybox();
 
 	handleSubmitFormValid();
+
+	handleScrollElm();
 });

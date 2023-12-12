@@ -35,7 +35,7 @@
 	</style>
 </head>
 <!-- is-preloader -->
-<body class="">
+<body id="body" class="">
 
 <!--<div id="preloader" class="preloader"></div>-->
 
@@ -103,15 +103,15 @@
 					</div>
 				</div>
 				<div class="col">
-					<div class="header-navigation">
+					<div class="header-navigation" id="header-navigation">
 						<ul>
 							<li>
-								<a href="" class="active">
+								<a href="javascript:void(0)" data-target="#body" class="active handleScrollElm">
 									Trang chủ
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="javascript:void(0)" data-target="#introduction" class="handleScrollElm">
 									Về chúng tôi
 									<i class="fal fa-angle-down"></i>
 								</a>
@@ -134,17 +134,17 @@
 								</ul>
 							</li>
 							<li>
-								<a href="">
+								<a href="javascript:void(0)" data-target="#specials" class="handleScrollElm">
 									Đặc biệt
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="javascript:void(0)" data-target="#gallery" class="handleScrollElm">
 									Gallery
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="javascript:void(0)" data-target="#contact" class="handleScrollElm">
 									Liên hệ
 								</a>
 							</li>
@@ -193,7 +193,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section-introduction pseudo section-gap"
+	<div id="introduction" class="section-introduction pseudo section-gap elmTargetScroll"
 	     style="background-image: url('./assets/images/introduction/introduction-bg.jpg')">
 		<div class="container" data-aos="fade-up">
 			<div class="row flex-lg-row-reverse flex-row">
@@ -288,6 +288,119 @@
 						<div class="why-description">
 							Nguyên liệu tươi ngon cùng với công thức chế biến chọn lọc làm nên những món ăn đảm bảo dinh
 							dưỡng và sức khỏe.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="specials" class="section-specials pseudo section-gap elmTargetScroll"
+	     style="background-image: url('./assets/images/introduction/introduction-bg.jpg')">
+		<div class="container" data-aos="fade-up">
+			<div class="section-heading">
+				<div class="heading-sub">
+					ĐẶC BIỆT
+				</div>
+				<div class="heading-title">
+					Các món đặc biệt của nhà hàng
+				</div>
+			</div>
+			<div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-lg-3">
+					<ul class="nav nav-tabs border-0 flex-column">
+						<li class="nav-item">
+							<a class="nav-link active" data-bs-toggle="tab" href="#tab-pho">Phở Việt Nam</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#tab-shushi">Sushi</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#tab-botittet">Bò bít tết HỒ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-9">
+					<div class="tab-content">
+						<div class="tab-pane fade active show" id="tab-pho">
+							<div class="row g-3 flex-row-reverse flex-lg-row">
+								<div class="col-lg-9">
+									<div class="specials-content">
+										<div class="specials-content_title">
+											Pho Hanoi – Phở Việt Nam
+										</div>
+										<div class="specials-content_text">
+											<p>
+												<i>
+													Phở Bò Hà Nội là một món phở thịnh soạn với bún, thịt bò và các loại
+													rau thơm, gia vị với thảo quả, hoa hồi, quế và gừng rang.
+												</i>
+											</p>
+											<p>
+												Đây là công thức nguyên bản vì nó vẫn được phục vụ trong các bếp đường
+												phố Hà Nội ngày nay. Ở đây tập trung vào hương vị thơm ngon đậm đà của
+												thịt và nước dùng.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 text-center">
+									<img src="./assets/images/specials/pho.png" class="img-fluid w-100" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab-shushi">
+							<div class="row g-3 flex-row-reverse flex-lg-row">
+								<div class="col-lg-9">
+									<div class="specials-content">
+										<div class="specials-content_title">
+											Architecto ut aperiam autem id
+										</div>
+										<div class="specials-content_text">
+											<p>
+												<i>
+													Nguồn cảm hứng cho món sushi ngày nay đến từ Đông Nam Á. Từ phương
+													pháp bảo quản cá nước ngọt, những hình thức đầu tiên của món sushi
+													hiện nay rất phổ biến đã phát triển theo thời gian.
+												</i>
+											</p>
+											<p>
+												Nhiều người gặp khó khăn khi dùng đũa để thưởng thức món Sushi. Chúng ta
+												hông thực sự phải làm việc vất vả như vậy: Theo truyền thống, đũa được
+												sử dụng trong quán sushi cho sashimi (cá sống ở dạng lát mỏng), trong
+												khi sushi truyền thống được ăn bằng ngón tay.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 text-center">
+									<img src="./assets/images/specials/shushi.png" class="img-fluid w-100" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab-botittet">
+							<div class="row g-3 flex-row-reverse flex-lg-row">
+								<div class="col-lg-9">
+									<div class="specials-content">
+										<div class="specials-content_title">
+											Architecto ut aperiam autem id
+										</div>
+										<div class="specials-content_text">
+											<p>
+												<i>
+													Bò bít tết nướng với măng tây và sốt tiêu tự làm.
+												</i>
+											</p>
+											<p>
+												Đây là một trong những món ăn mà nhà hàng chúng tôi tự hào các bạn nên
+												thử.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 text-center">
+									<img src="./assets/images/specials/bo-bit-tet.png" class="img-fluid w-100" alt="">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -470,7 +583,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section-gallery section-gap">
+	<div id="gallery" class="section-gallery section-gap elmTargetScroll">
 		<div class="container" data-aos="fade-up">
 			<div class="section-heading">
 				<div class="heading-sub">
@@ -550,9 +663,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="section-contact section-gap">
+	<div id="contact" class="section-contact section-gap elmTargetScroll">
 		<div class="container">
-			<div class="section-heading">
+			<div class="section-heading" data-aos="fade-up">
 				<div class="heading-sub">
 					LIÊN HỆ
 				</div>
@@ -560,7 +673,7 @@
 					Liên hệ với chúng tôi
 				</div>
 			</div>
-			<div class="contact-map">
+			<div class="contact-map" data-aos="fade-up" data-aos-delay="100">
 				<div class="row g-4">
 					<div class="col-lg-6">
 						<div class="contact-iframe">
@@ -584,7 +697,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="contact-information">
+			<div class="contact-information" data-aos="fade-up" data-aos-delay="200">
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="contact-information_item hstack gap-20px">
@@ -641,19 +754,20 @@
 								<div class="col-lg-6">
 									<input type="text" class="contact-information_input" placeholder="Tên của bạn"
 									       required>
-									<div class="contact-information_valid invalid-feedback">Hãy nhập ít nhất 4 ký tự</div>
+									<div class="contact-information_valid invalid-feedback">Hãy nhập ít nhất 4 ký tự
+									</div>
 								</div>
 								<div class="col-lg-6">
 									<input type="email" class="contact-information_input" placeholder="Email" required>
 									<div class="contact-information_valid invalid-feedback">Hãy nhập địa chỉ email chính
-									                                                      xác
+									                                                        xác
 									</div>
 								</div>
 								<div class="col-lg-12">
 									<input type="tel" minlength="10" maxlength="10" class="contact-information_input"
 									       placeholder="Số điện thoại của bạn" required>
 									<div class="contact-information_valid invalid-feedback">Hãy nhập số điện thoại của
-									                                                      bạn
+									                                                        bạn
 									</div>
 								</div>
 								<div class="col-lg-12">
@@ -677,6 +791,144 @@
 </div>
 
 <footer id="footer" class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="footer-info">
+						<div class="footer-title">
+							VIETNAMESISCHE KÜCHE & SUSHI BAR
+						</div>
+						<div class="footer-text">
+							Zasingerstraße 2
+							<br>
+							81547 München, Deutschland
+							<br>
+							St.Nr.: 189/826/45736
+							<br>
+							Finanzamt München
+						</div>
+						<div class="footer-contact">
+							<div class="footer-contact_item">
+								Điện thoại:<a href="tel:08920081707">089.2008.1707</a>
+							</div>
+							<div class="footer-contact_item">
+								Email:<a href="mailto:info@asia-ho.de">info@asia-ho.de</a>
+							</div>
+						</div>
+						<div class="footer-social">
+							<div class="footer-social_item">
+								<a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div class="footer-social_item">
+								<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="footer-info">
+						<div class="footer-title">
+							ASIA HO MURNAU AM STAFFELSEE
+						</div>
+						<div class="footer-text">
+							Zasingerstraße 2
+							<br>
+							81547 München, Deutschland
+							<br>
+							St.Nr.: 189/826/45736
+							<br>
+							Finanzamt München
+						</div>
+						<div class="footer-contact">
+							<div class="footer-contact_item">
+								Điện thoại:<a href="tel:08920081707">089.2008.1707</a>
+							</div>
+							<div class="footer-contact_item">
+								Email:<a href="mailto:info@asia-ho.de">info@asia-ho.de</a>
+							</div>
+						</div>
+						<div class="footer-social">
+							<div class="footer-social_item">
+								<a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							</div>
+							<div class="footer-social_item">
+								<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-links hstack">
+				<div class="footer-links_title">
+					Đường dẫn hữu ích
+				</div>
+				<ul class="list-unstyled hstack mb-0">
+					<li>
+						<i class="fal fa-angle-right"></i>
+						<a href="">
+							Trang chủ
+						</a>
+					</li>
+					<li>
+						<i class="fal fa-angle-right"></i>
+						<a href="">
+							Về chúng tôi
+						</a>
+					</li>
+					<li>
+						<i class="fal fa-angle-right"></i>
+						<a href="">
+							Sự kiện
+						</a>
+					</li>
+					<li>
+						<i class="fal fa-angle-right"></i>
+						<a href="">
+							Impressum
+						</a>
+					</li>
+					<li>
+						<i class="fal fa-angle-right"></i>
+						<a href="">
+							Chính sách bảo mật
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-links hstack">
+				<div class="footer-links_title">
+					Dịch vụ của chúng tôi
+				</div>
+				<ul class="list-unstyled hstack mb-0">
+					<li>
+						<i class="fal fa-angle-right"></i>
+						<a href="">
+							Tiệc gia đình
+						</a>
+					</li>
+					<li>
+						<i class="fal fa-angle-right"></i>
+						<a href="">
+							Tiệc sinh nhật
+						</a>
+					</li>
+					<li>
+						<i class="fal fa-angle-right"></i>
+						<a href="">
+							Giao hàng
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			2000-2023 © Bản quyền thuộc về <strong><span>Asia-Ho</span></strong> . Đã đăng ký Bản quyền.<span
+				class="text-nowrap">Design by <a href="https://nencer.com" target="_blank">Nencer</a>.</span>
+		</div>
+	</div>
 </footer>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>

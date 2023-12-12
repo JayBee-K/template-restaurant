@@ -374,7 +374,7 @@
 
 .section-introduction {
 	background-position: center center;
-	background-size: contain;
+	background-size: cover;
 	background-attachment: fixed;
 }
 
@@ -506,6 +506,55 @@
 
 .section-why .why-item:hover > * {
 	color: var(--bs-white);
+}
+
+.section-specials {
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.section-specials:before {
+	background: rgba(var(--bs-black-rgb), 0.8);
+	inset: 0;
+}
+
+.section-specials .nav-tabs .nav-item .nav-link {
+	border-radius: 0;
+	border: 0;
+	padding: 12px 15px;
+	color: var(--bs-white);
+	border-right: 2px solid var(--primary-color);
+	font-weight: 600;
+	font-size: 1.075em;
+}
+
+.section-specials .nav-tabs .nav-item .nav-link:hover {
+	color: var(--primary-color);
+}
+
+.section-specials .nav-tabs .nav-item .nav-link.active {
+	background: var(--primary-color);
+	color: #1a1814;
+}
+
+.section-specials .specials-content .specials-content_title {
+	font-size: 1.825em;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: var(--bs-white);
+	font-family: var(--font-heading-1);
+}
+
+.section-specials .specials-content .specials-content_text {
+	color: #aaaaaa;
+	font-size: 1.15em;
+}
+
+.section-specials .specials-content .specials-content_text > p:last-child,
+.section-specials .specials-content .specials-content_text > ol:last-child,
+.section-specials .specials-content .specials-content_text > ul:last-child {
+	margin-bottom: 0;
 }
 
 .section-testimonials {
@@ -666,4 +715,126 @@
 	font-size: 1.15em;
 	text-transform: initial;
 	padding: 14px 35px;
+}
+
+.footer .footer-top {
+	padding: 60px 0;
+	background: #0c0b09;
+	border-top: 1px solid #37332a;
+	border-bottom: 1px solid #28251f;
+}
+
+.footer .footer-top .footer-info .footer-title {
+	font-family: var(--font-heading-2);
+	font-size: 1.675em;
+	margin-bottom: 20px;
+	font-weight: 300;
+	color: var(--bs-white);
+}
+
+.footer .footer-top .footer-info .footer-text {
+	font-size: 1em;
+	color: var(--bs-white);
+	font-family: var(--font-heading-1);
+	line-height: 1.8
+}
+
+.footer .footer-top .footer-info .footer-contact {
+	margin-top: 30px;
+}
+
+.footer .footer-top .footer-info .footer-contact .footer-contact_item {
+	font-weight: 700;
+	font-size: 1em;
+	color: var(--bs-white);
+	font-family: var(--font-heading-1);
+}
+
+.footer .footer-top .footer-info .footer-contact .footer-contact_item > a {
+	color: var(--primary-color);
+	font-weight: 600;
+	margin-left: 4px;
+	display: inline-flex;
+}
+
+.footer .footer-top .footer-info .footer-contact .footer-contact_item > a:hover {
+	color: var(--primary-hover);
+}
+
+.footer .footer-top .footer-info .footer-social {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.footer .footer-top .footer-info .footer-social .footer-social_item > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	width: 36px;
+	border-radius: 50px;
+	color: var(--bs-white);
+	font-size: 1.3em;
+	background: #28251f;
+}
+
+.footer .footer-top .footer-info .footer-social .footer-social_item > a:hover {
+	background: var(--primary-color);
+}
+
+.footer .footer-top .footer-links {
+	margin-top: 30px;
+	color: var(--bs-white);
+}
+
+.footer .footer-top .footer-links .footer-links_title {
+	font-weight: 600;
+	color: var(--bs-white);
+	position: relative;
+	font-family: var(--font-heading-1);
+	font-size: 1.675em;
+}
+
+.footer .footer-top .footer-links > ul {
+	gap: 8px;
+	margin-left: 8px;
+	padding-top: 8px;
+}
+
+.footer .footer-top .footer-links > ul > li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.footer .footer-top .footer-links > ul > li > a {
+	color: var(--bs-white);
+	display: inline-flex;
+	align-items: center;
+}
+
+.footer .footer-top .footer-links > ul > li > i {
+	font-size: 1.3em;
+}
+
+.footer .footer-top .footer-links > ul > li > a:hover,
+.footer .footer-top .footer-links > ul > li > i {
+	color: var(--primary-color);
+}
+
+.footer .footer-bottom {
+	text-align: center;
+	background: var(--bs-black);
+	padding: 30px 0;
+	color: var(--bs-white);
+}
+
+.footer .footer-bottom a {
+	color: var(--primary-color);
+}
+
+.footer .footer-bottom a:hover {
+	color: var(--primary-hover);
 }
