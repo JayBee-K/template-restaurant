@@ -260,6 +260,13 @@
         font-size: 1.3em;
         text-align: center;
     }
+
+    .section-hero,
+    .section-introduction,
+    .section-specials,
+    .section-order {
+        background-attachment: initial;
+    }
 }
 
 @media screen and (min-width: 576px) {
