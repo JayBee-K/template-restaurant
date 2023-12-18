@@ -34,9 +34,9 @@
 		}
 	</style>
 </head>
-<body id="body" class="is-preloader">
+<body id="body" class="">
 
-<div id="preloader" class="preloader"></div>
+<!-- is-preloader <div id="preloader" class="preloader"></div>-->
 
 <div id="header" class="header">
 	<div class="header-top hstack">
@@ -174,77 +174,105 @@
 		<div class="container" data-aos="zoom-in" data-aos-delay="100">
 			<div class="row g-3">
 				<div class="col-lg-9">
-					<div class="cart-header">
-						<div class="cart-search"></div>
-						<div id="cart-slider" class="cart-slider">
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a href="#suppe">
-											SUPPE
-										</a>
+					<div class="cart-sticky" id="cartSticky">
+						<div class="cart-header">
+							<div class="cart-search" id="cartSearch">
+								<button type="button" class="cart-search_button link-default openSearch">
+									<i class="fal fa-search"></i>
+								</button>
+								<input type="text" placeholder="Tìm kiếm sản phẩm, v.v." class="form-control">
+								<button class="cart-search_close link-default closeSearch">
+									<i class="fal fa-times"></i>
+								</button>
+							</div>
+							<div id="cart-slider" class="cart-slider">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#suppe" data-index="0"
+											   class="cart-link active">
+												SUPPE
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#vospeisen" data-index="1"
+											   class="cart-link">
+												VORSPEISEN
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#salat" data-index="2"
+											   class="cart-link">
+												SALAT
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#vegetarisch" data-index="3"
+											   class="cart-link">
+												VEGETARISCH
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#huhnerfleisch" data-index="4"
+											   class="cart-link">
+												HÜHNERFLEISCH
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#ente" data-index="5"
+											   class="cart-link">
+												ENTE (Alle Knusprige)
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#rinderfleisch" data-index="6"
+											   class="cart-link">
+												RINDERFLEISCH
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#meeresfruchte" data-index="7"
+											   class="cart-link">
+												MEERESFRÜCHTE
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#reisnudelnschale" data-index="8"
+											   class="cart-link">
+												REISNUDELNSCHALE
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#nudelgerichte" data-index="9"
+											   class="cart-link">
+												NUDELGERICHTE
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#gebraateneudon" data-index="10"
+											   class="cart-link">
+												GEBRATENE UDON
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="javascript:void(0)" data-target="#gebrateneeniernudeln"
+											   data-index="11"
+											   class="cart-link">
+												GEBRATENE EIERNUDELN
+											</a>
+										</div>
 									</div>
-									<div class="swiper-slide">
-										<a href="#vospeisen">
-											VORSPEISEN
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#salat">
-											SALAT
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#vegetarisch">
-											VEGETARISCH
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#huhnerfleisch">
-											HÜHNERFLEISCH
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#ente">
-											ENTE (Alle Knusprige)
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#rinderfleisch">
-											RINDERFLEISCH
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#meeresfruchte">
-											MEERESFRÜCHTE
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#reisnudelnschale">
-											REISNUDELNSCHALE
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#nudelgerichte">
-											NUDELGERICHTE
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#gebraateneudon">
-											GEBRATENE UDON
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="#gebrateneeniernudeln">
-											GEBRATENE EIERNUDELN
-										</a>
+								</div>
+								<div class="swiper-button">
+									<div class="button-next">
+										<i class="fal fa-angle-right"></i>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="cart-list">
-						<div class="cart-group" id="suppe">
+						<div class="cart-group cart-scroll" id="suppe">
 							<div class="cart-title">
 								SUPPE
 							</div>
@@ -337,7 +365,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="vospeisen">
+						<div class="cart-group cart-scroll" id="vospeisen">
 							<div class="cart-title">
 								VORSPEISEN
 							</div>
@@ -474,7 +502,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="salat">
+						<div class="cart-group cart-scroll" id="salat">
 							<div class="cart-title">
 								SALAT
 							</div>
@@ -611,7 +639,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="vegetarisch">
+						<div class="cart-group cart-scroll" id="vegetarisch">
 							<div class="cart-title">
 								VEGETARISCH
 							</div>
@@ -748,7 +776,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="huhnerfleisch">
+						<div class="cart-group cart-scroll" id="huhnerfleisch">
 							<div class="cart-title">
 								HÜHNERFLEISCH
 							</div>
@@ -885,7 +913,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="ente">
+						<div class="cart-group cart-scroll" id="ente">
 							<div class="cart-title">
 								ENTE (Alle Knusprige)
 							</div>
@@ -1022,7 +1050,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="rinderfleisch">
+						<div class="cart-group cart-scroll" id="rinderfleisch">
 							<div class="cart-title">
 								RINDERFLEISCH
 							</div>
@@ -1159,7 +1187,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="meeresfruchte">
+						<div class="cart-group cart-scroll" id="meeresfruchte">
 							<div class="cart-title">
 								MEERESFRÜCHTE
 							</div>
@@ -1296,7 +1324,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="reisnudelnschale">
+						<div class="cart-group cart-scroll" id="reisnudelnschale">
 							<div class="cart-title">
 								REISNUDELNSCHALE
 							</div>
@@ -1433,7 +1461,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="nudelgerichte">
+						<div class="cart-group cart-scroll" id="nudelgerichte">
 							<div class="cart-title">
 								NUDELGERICHTE
 							</div>
@@ -1570,7 +1598,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="gebraateneudon">
+						<div class="cart-group cart-scroll" id="gebraateneudon">
 							<div class="cart-title">
 								GEBRATENE UDON
 							</div>
@@ -1707,7 +1735,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="cart-group" id="gebrateneeniernudeln">
+						<div class="cart-group cart-scroll" id="gebrateneeniernudeln">
 							<div class="cart-title">
 								GEBRATENE EIERNUDELN
 							</div>
