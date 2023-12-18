@@ -244,10 +244,13 @@ const handleSlideHeaderCart = function () {
             spaceBetween: 8,
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.5,
+                },
+                575: {
+                    slidesPerView: 2,
                 },
                 768: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                 },
                 1200: {
                     slidesPerView: 5,

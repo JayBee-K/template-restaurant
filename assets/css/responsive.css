@@ -267,6 +267,24 @@
     .section-order {
         background-attachment: initial;
     }
+
+    .cart-list .cart-group .cart-item .cart-item_content .cart-item_title,
+    .cart-list .cart-group .cart-item .cart-item_price .cart-price_current{
+        font-size: 1.15em;
+    }
+
+    .cart-list .cart-group .cart-item .cart-item_content .cart-item_desc,
+    .cart-list .cart-group .cart-item .cart-item_price .cart-price_sale{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .cart-list .cart-group .cart-item .cart-item_price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
 }
 
 @media screen and (min-width: 576px) {
