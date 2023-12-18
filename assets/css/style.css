@@ -1191,3 +1191,28 @@
 .cart-slider .button-next.swiper-button-disabled {
 	display: none;
 }
+
+.cart-sidebar .cart-sidebar_header {
+	padding: 18px 15px;
+	text-align: center;
+	font-size: 1.15em;
+	color: var(--bs-white);
+	background: rgba(0, 0, 0, 0.85);
+	font-weight: 700;
+}
+
+.cart-sidebar .cart-sidebar_body .cart-sidebar_empty {
+	background: rgba(12, 11, 9, 0.6);
+	padding: 15px;
+	font-size: 1.15em;
+	color: var(--bs-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.cart-sidebar .cart-sidebar_body .cart-sidebar_empty >i {
+	font-size: 2em;
+}
