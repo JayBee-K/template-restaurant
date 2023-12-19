@@ -32,6 +32,120 @@
             --primary-hover: #d9ba85;
             --primary-rgb: 205, 164, 94;
         }
+
+
+        .section-order {
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        background-position: top center;
+	        background-attachment: fixed;
+	        padding-top: 160px;
+	        padding-bottom: 30px;
+        }
+
+        .section-order:before {
+	        background: rgba(var(--bs-black-rgb), 0.5);
+	        inset: 0;
+        }
+
+        .section-order .order-list .order-item {
+	        background: rgba(12, 11, 9, 0.6);
+	        border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+	        padding: 20px 30px;
+        }
+
+        .section-order .order-list .order-item .order-content .order-content_title {
+	        font-size: 2.15em;
+	        font-weight: 500;
+	        font-family: var(--font-heading-1);
+	        color: var(--primary-color);
+        }
+
+        .section-order .order-list .order-item .order-content .order-content_address {
+	        font-weight: 500;
+	        font-family: var(--font-heading-1);
+	        color: #eee;
+	        font-size: 1.425em;
+        }
+
+        .section-order .order-list .order-item .order-icon {
+	        width: 94px;
+	        height: 94px;
+	        /*background: radial-gradient(var(--primary-color) 50%, rgba(var(--primary-rgb), 0.4) 52%);*/
+	        border-radius: 50%;
+	        position: relative;
+	        overflow: hidden;
+	        transition: var(--transition-default);
+	        margin: 0 auto;
+	        background: rgba(var(--primary-rgb), 0.4);
+        }
+
+        .section-order .order-list .order-item .order-icon:after {
+	        position: absolute;
+	        top: 50%;
+	        left: 50%;
+	        transform: translate(-50%, -50%);
+	        width: 64px;
+	        height: 64px;
+	        content: "";
+	        display: block;
+	        background: var(--primary-color);
+	        border-radius: 50%;
+        }
+
+        .section-order .order-list .order-item .order-icon::before {
+	        content: '';
+	        position: absolute;
+	        width: 120px;
+	        height: 120px;
+	        -webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+	        -webkit-animation: pulsate-btn 2s;
+	        animation: pulsate-btn 2s;
+	        -webkit-animation-direction: forwards;
+	        animation-direction: forwards;
+	        -webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	        -webkit-animation-timing-function: steps;
+	        animation-timing-function: steps;
+	        opacity: 1;
+	        border-radius: 50%;
+	        border: 5px solid rgba(var(--primary-rgb), 0.7);
+	        top: -13px;
+	        left: -13px;
+        }
+
+        .section-order .order-list .order-item .order-icon:hover {
+	        background: var(--primary-color);
+        }
+
+        .section-order .order-list .order-item + .order-item {
+	        margin-top: 30px;
+        }
+
+
+        @-webkit-keyframes pulsate-btn {
+	        0% {
+		        transform: scale(0.6, 0.6);
+		        opacity: 1;
+	        }
+	        100% {
+		        transform: scale(1, 1);
+		        opacity: 0;
+	        }
+        }
+
+        @keyframes pulsate-btn {
+	        0% {
+		        transform: scale(0.6, 0.6);
+		        opacity: 1;
+	        }
+	        100% {
+		        transform: scale(1, 1);
+		        opacity: 0;
+	        }
+        }
+
     </style>
 </head>
 <body id="body" class="is-preloader">
